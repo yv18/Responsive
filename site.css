@@ -1,0 +1,356 @@
+h1 {
+	font-family: 'century gothic' serif;
+	font-size: 3em;
+	text-align: center;
+	line-height: 400%;
+	margin: 0;
+	background-color: rgba(5, 72, 12, .5);
+}
+
+h1 a {
+	color: #eee;
+	text-decoration: none;
+}
+
+h1 a:hover {
+	text-shadow: 2px 2px 10px white;
+}
+
+h2 {
+	font-family: "Gabriola", "sans-sefif";
+	font-size: 2em;
+	font-weight: 1000;
+	color: rgb(35, 102, 12);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+h3 {
+	font-family: "Gabriola", "sans-sefif";
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+header {
+	background-color: rgb(65, 132, 42);
+	color: #eee;
+	background-image: url("imgs/hand-grips-a-gardening-tool-to-cut-back-a-plant.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+header:hover {
+	text-shadow: 2px 2px 10px white;
+}
+
+nav {
+	font-family: "Century Gothic", "serif";
+	text-align: center;
+}
+
+nav a {
+	color: rgb(35, 102, 12);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	padding: 10px 40px 10px 40px;
+}
+
+nav a:hover {
+	text-shadow: 0px 0px 1px rgb(20, 70, 20);
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	border-left: solid 1px;
+	border-left-color: rgb(158, 194, 143);
+}
+
+footer {
+	font-family: "Century Gothic", "serif";
+	background-color: rgb(65, 132, 42);
+	color: #eee;
+	font-size: smaller;
+	padding: 10px 10% 10px 10%;
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+footer nav a {
+	color: #eee;
+	display: block;
+	padding: 0px;
+	text-align: left;
+}
+
+ul {
+	padding: 0px;
+	list-style: none;
+}
+
+#copyright {
+	font-family: "serif";
+	font-style: italic;
+	text-align: center;
+	width: 100%;
+}
+
+#wrapper {
+	align-content: center;
+	width: 90%;
+	margin: auto;
+}
+
+#hero {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	object-position: center;
+}
+
+#categories {
+	margin: 40px 0px 40px 0px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 40px;
+}
+
+#categories section:nth-of-type(2) {
+	grid-row: 1/3;
+}
+
+#categories section p {
+	margin-top: 0;
+	margin-left: 0px;
+	padding: 0;
+}
+
+#categories img {
+	width: 100%;
+	object-fit: cover;
+}
+
+#categories section {
+	margin-bottom: 0px;
+}
+
+#categories section h3 {
+	margin-top: 0;
+	margin-left: 0px;
+	padding: 0;
+}
+
+#multicol {
+	display: flex;
+	justify-content: space-between;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+.item33 {
+	flex-grow: 1;
+	padding-left: 10%;
+}
+
+.icon {
+	display: block;
+	font-size: 3em;
+	color: rgb(35, 102, 12);
+}
+
+.item25 {
+	width: 23%;
+	text-align: center;
+	border: 0px solid;
+	box-shadow: 0px 0px 20px #eee;
+}
+
+#pagecontainer {
+	display: grid;
+	grid-template-columns: 200px auto;
+}
+
+header,
+footer {
+	grid-column: 1/3
+}
+
+/* Table */
+
+* {
+	box-sizing: border-box;
+}
+
+table {
+	width: 70%;
+	margin: 0 auto;
+}
+
+table th {
+	color: #eee;
+	background-color: rgb(65, 132, 42);
+}
+
+table tr:nth-of-type(even) td {
+	background-color: rgb(178, 214, 163);
+}
+
+table th,
+table td {
+	padding: 5px;
+	text-align: center;
+}
+
+th,
+caption,
+label {
+	font-size: 15px;
+	font-family: "Gabriola", "sans-sefif";
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+}
+
+caption {
+	font-weight: 600;
+}
+
+form {
+	width: 70%;
+	margin: 0 auto;
+	box-shadow: 0px 0px 2px #bbb;
+	padding: 10px;
+	display: grid;
+	grid-column-gap: 15px;
+	grid-template-columns: 150px auto;
+}
+
+label+* {
+	margin-bottom: 15px;
+}
+
+input[type=submit] {
+	padding: initial;
+	justify-self: start;
+}
+
+
+
+
+/* End Table */
+
+/* Responsive */
+
+@media screen and (max-width:1024px) {
+
+	form,
+	table {
+		width: 90%;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	nav ul {
+		justify-content: space-around;
+	}
+
+	nav ul li {
+		display: inline-block;
+	}
+
+	nav a {
+		padding: 10px 30px;
+	}
+
+	footer nav ul li {
+		display: block;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	#categories section {
+		width: 100%;
+	}
+
+	#pagecontainer {
+		display: block;
+	}
+
+
+}
+
+@media screen and (max-width:760px) {
+
+	form,
+	table {
+		width: 100%;
+	}
+
+	form {
+		padding: none;
+		border: none;
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	input[type=submit] {
+		justify-self: stretch;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	nav {
+		border-bottom: 1px solid rgb(158, 194, 143);
+	}
+
+	#multicol {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.item25 {
+		width: 50%;
+	}
+
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav ul li {
+		display: block;
+	}
+
+	#categories {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#categories section img {
+		width: 100%;
+	}
+
+	footer .item33 {
+		float: none;
+		display: block;
+		padding-left: 40%;
+		width: 100%;
+	}
+}
